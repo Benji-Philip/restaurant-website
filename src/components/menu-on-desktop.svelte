@@ -1,4 +1,5 @@
 <script>
+  import ImageTwo from "../assets/image-2.jpg"
   import ButtonMenu from "../components/button-menu.svelte";
   let selectedButton = 1;
   function handleButtonMenuEvent(e) {
@@ -39,7 +40,7 @@
     </section>
   </div>
   <img
-    src="/src/assets/image-2.jpg"
+    src={ImageTwo.src}
     alt=""
     class="h-[300px] w-[300px] object-cover rounded-xl m-6 mr-0 hidden md:block"
   />
