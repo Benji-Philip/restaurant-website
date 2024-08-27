@@ -8,6 +8,10 @@ import ImageOne from "../assets/image-1.webp";
 import ImageTwo from "../assets/image-2.webp";
 import ImageThree from "../assets/image-3.webp";
 import ImageFour from "../assets/image-4.webp";
+import ImageOneSmall from "../assets/image-1-small.webp";
+import ImageTwoSmall from "../assets/image-2-small.webp";
+import ImageThreeSmall from "../assets/image-3-small.webp";
+import ImageFourSmall from "../assets/image-4-small.webp";
 import { Image } from "astro:assets";
 ---
 
@@ -15,14 +19,19 @@ import { Image } from "astro:assets";
   <section class="flex flex-col flex-grow">
     <!-- Hero -->
     <section class="grid">
-      <img
-        decoding="async"
-        loading="lazy"
-        src={ImageOne.src}
-        alt=""
-        class="col-start-1 row-start-1 h-[60vh] md:h-[80vh] min-w-[100vw] object-cover brightness-[0.8]"
-        id="img-1"
-      />
+      <div
+        class="bg-cover bg-center col-start-1 row-start-1"
+        style=`background-image: url(${ImageOneSmall.src})`
+      >
+        <img
+          decoding="async"
+          loading="eager"
+          src={ImageOne.src}
+          alt=""
+          class=" h-[60vh] md:h-[80vh] min-w-[100vw] object-cover brightness-[0.8]"
+          id="img-1"
+        />
+      </div>
       <div
         class="text-white font-medium text-6xl md:text-8xl lg:text-9xl text-center z-10 col-start-1 row-start-1 flex items-center justify-center"
       >
@@ -52,13 +61,13 @@ import { Image } from "astro:assets";
 
       <div class="flex flex-col gap-10 sm:flex-row justify-center mb-20">
         <div class="flex flex-col sm:flex-1 items-center sm:items-start">
-          <img
+          <div class=" bg-cover bg-center" style=`background-image: url(${ImageTwoSmall.src})`><img
             decoding="async"
             loading="lazy"
             src={ImageTwo.src}
             alt=""
             class="h-[400px] object-cover"
-          />
+          /></div>
           <div
             class="flex sm:flex-row flex-col items-center sm:items-start justify-between mt-5 font-light text-xl w-full flex-auto"
           >
@@ -67,13 +76,13 @@ import { Image } from "astro:assets";
           </div>
         </div>
         <div class="flex flex-col flex-1">
-          <img
+          <div class=" bg-cover bg-center" style=`background-image: url(${ImageThreeSmall.src})`><img
             decoding="async"
             loading="lazy"
             src={ImageThree.src}
             alt=""
             class="h-[350px] object-cover"
-          /><div
+          /></div><div
             class="flex sm:flex-row flex-col items-center sm:items-start justify-between mt-5 font-light text-xl w-full flex-auto"
           >
             <div class="text-wrap">Slow Cooked Chicken</div>
@@ -81,13 +90,13 @@ import { Image } from "astro:assets";
           </div>
         </div>
         <div class="flex flex-col flex-1">
-          <img
+          <div class=" bg-cover bg-center" style=`background-image: url(${ImageFourSmall.src})`><img
             decoding="async"
             loading="lazy"
             src={ImageFour.src}
             alt=""
             class="h-[300px] object-cover"
-          /><div
+          /></div><div
             class="flex sm:flex-row flex-col items-center sm:items-start justify-between mt-5 font-light text-xl w-full flex-auto"
           >
             <div class="">Raspberries On Ice</div>

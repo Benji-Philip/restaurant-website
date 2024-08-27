@@ -7,6 +7,10 @@ import Appetizers from "./appetizers.svelte";
 import MainCourse from "./main-course.svelte";
 import Desserts from "./desserts.svelte";
 import Specials from "./specials.svelte";
+  import ImageOneSmall from "../assets/image-1-small.webp";
+  import ImageTwoSmall from "../assets/image-2-small.webp";
+  import ImageThreeSmall from "../assets/image-3-small.webp";
+  import ImageFourSmall from "../assets/image-4-small.webp";
 ---
 
 <section class="flex flex-col w-full flex-1 sm:hidden">
@@ -15,13 +19,16 @@ import Specials from "./specials.svelte";
   >
     Appetizers
   </h2>
-  <img
+  <div
+        class="bg-cover bg-center"
+        style=`background-image: url(${ImageTwoSmall.src})`
+      ><img
     decoding="async"
     loading="lazy"
     src={ImageTwo.src}
     alt=""
     class="h-[300px] w-[300px] object-cover rounded-xl mr-0 block md:hidden mb-9 mt-9 self-center"
-  />
+  /></div>
   <Appetizers />
 
   <h2
@@ -29,31 +36,40 @@ import Specials from "./specials.svelte";
   >
     Main Course
   </h2>
-  <img
+  <div
+        class="bg-cover bg-center"
+        style=`background-image: url(${ImageOneSmall.src})`
+      ><img
   decoding="async"
   loading="lazy"
     src={ImageOne.src}
     alt=""
     class="h-[300px] w-[300px] object-cover rounded-xl mr-0 block md:hidden mb-9 mt-9 self-center"
-  /><MainCourse />
+  /></div><MainCourse />
   <h2
     class="font-extrabold text-2xl text-center mt-10 border-2 border-[#281c1c] px-4 py-2"
   >
     Desserts
   </h2>
-  <img
+  <div
+        class="bg-cover bg-center"
+        style=`background-image: url(${ImageFourSmall.src})`
+      ><img
   decoding="async"
   loading="lazy"
     src={ImageFour.src}
     alt=""
     class="h-[300px] w-[300px] object-cover rounded-xl mr-0 block md:hidden mb-9 mt-9 self-center"
-  /><Desserts />
+  /></div><Desserts />
   <h2
     class="font-extrabold text-2xl text-center mt-10 border-2 border-[#281c1c] px-4 py-2"
   >
     Specials
   </h2>
-  <img
+  <div
+        class="bg-cover bg-center"
+        style=`background-image: url(${ImageThreeSmall.src})`
+      ><img
   decoding="async"
   loading="lazy"
     src={ImageThree.src}

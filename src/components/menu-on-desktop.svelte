@@ -8,6 +8,10 @@
   import MainCourse from "./main-course.svelte";
   import Desserts from "./desserts.svelte";
   import Specials from "./specials.svelte";
+  import ImageOneSmall from "../assets/image-1-small.webp";
+  import ImageTwoSmall from "../assets/image-2-small.webp";
+  import ImageThreeSmall from "../assets/image-3-small.webp";
+  import ImageFourSmall from "../assets/image-4-small.webp";
   let selectedButton = 1;
   function handleButtonMenuEvent(e) {
     selectedButton = e.detail.selected;
@@ -33,44 +37,74 @@
       </div>
     </section>
   </div>
-  <img
+  <div
+        class=" bg-cover bg-center h-[300px] w-[300px] object-cover rounded-xl m-6 mr-0 hidden md:block md:{selectedButton ===
+    1
+      ? 'block'
+      : 'hidden'}"
+        style="background-image: url({ImageTwoSmall.src})"
+      ><img
     decoding="async"
     loading="lazy"
     src={ImageTwo.src}
     alt=""
-    class="h-[300px] w-[300px] object-cover rounded-xl m-6 mr-0 hidden md:block md:{selectedButton ===
+    class="h-[300px] w-[300px] object-cover rounded-xl hidden md:block md:{selectedButton ===
     1
       ? 'block'
       : 'hidden'}"
-  />
-  <img
+  /></div>
+  
+  
+  <div
+        class="bg-cover bg-center h-[300px] w-[300px] object-cover rounded-xl m-6 mr-0 hidden md:block md:{selectedButton ===
+    2
+      ? 'block'
+      : 'hidden'}"
+        style="background-image: url({ImageOneSmall.src})"
+      ><img
     decoding="async"
     loading="lazy"
     src={ImageOne.src}
     alt=""
-    class="h-[300px] w-[300px] object-cover rounded-xl m-6 mr-0 hidden md:block md:{selectedButton ===
+    class="h-[300px] w-[300px] object-cover rounded-xl hidden md:block md:{selectedButton ===
     2
       ? 'block'
       : 'hidden'}"
-  />
-  <img
+  /></div>
+  
+  
+  <div
+        class="bg-cover bg-center h-[300px] w-[300px] object-cover rounded-xl m-6 mr-0 hidden md:block md:{selectedButton ===
+    3
+      ? 'block'
+      : 'hidden'}"
+        style="background-image: url({ImageFourSmall.src})"
+      ><img
     decoding="async"
     loading="lazy"
     src={ImageFour.src}
     alt=""
-    class="h-[300px] w-[300px] object-cover rounded-xl m-6 mr-0 hidden md:block md:{selectedButton ===
+    class="h-[300px] w-[300px] object-cover rounded-xl hidden md:block md:{selectedButton ===
     3
       ? 'block'
       : 'hidden'}"
-  />
-  <img
+  /></div>
+  
+  
+  <div
+        class="bg-cover bg-center h-[300px] w-[300px] object-cover rounded-xl m-6 mr-0 hidden md:block md:{selectedButton ===
+    4
+      ? 'block'
+      : 'hidden'}"
+        style="background-image: url({ImageThreeSmall.src})"
+      ><img
     decoding="async"
     loading="lazy"
     src={ImageThree.src}
     alt=""
-    class="h-[300px] w-[300px] object-cover rounded-xl m-6 mr-0 hidden md:block md:{selectedButton ===
+    class="h-[300px] w-[300px] object-cover rounded-xl hidden md:block md:{selectedButton ===
     4
       ? 'block'
       : 'hidden'}"
-  />
+  /></div>
 </div>
