@@ -36,21 +36,21 @@
     <img
       src={ImageTwo.src}
       alt=""
-      class="h-[300px] w-[300px] object-cover rounded-xl m-6 mr-0 hidden md:{selectedButton === 1 ? "block":"hidden"}"
+      class="h-[300px] w-[300px] object-cover rounded-xl m-6 mr-0 hidden md:block md:{selectedButton === 1 ? "block":"hidden"}"
     />
     <img
       src={ImageOne.src}
       alt=""
-      class="h-[300px] w-[300px] object-cover rounded-xl m-6 mr-0 hidden md:{selectedButton === 2 ? "block":"hidden"}"
+      class="h-[300px] w-[300px] object-cover rounded-xl m-6 mr-0 hidden md:block md:{selectedButton === 2 ? "block":"hidden"}"
     />
     <img
       src={ImageFour.src}
       alt=""
-      class="h-[300px] w-[300px] object-cover rounded-xl m-6 mr-0 hidden md:{selectedButton === 3 ? "block":"hidden"}"
+      class="h-[300px] w-[300px] object-cover rounded-xl m-6 mr-0 hidden md:block md:{selectedButton === 3 ? "block":"hidden"}"
     />
     <img
       src={ImageThree.src}
       alt=""
-      class="h-[300px] w-[300px] object-cover rounded-xl m-6 mr-0 hidden md:{selectedButton === 4 ? "block":"hidden"}"
+      class="h-[300px] w-[300px] object-cover rounded-xl m-6 mr-0 hidden md:block md:{selectedButton === 4 ? "block":"hidden"}"
     />
 </div>
