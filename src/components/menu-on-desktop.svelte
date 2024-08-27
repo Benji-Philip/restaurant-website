@@ -1,5 +1,5 @@
 <script>
-  import ImageTwo from "../assets/image-2.jpg"
+  import ImageTwo from "../assets/image-2.webp"
   import ButtonMenu from "../components/button-menu.svelte";
   let selectedButton = 1;
   function handleButtonMenuEvent(e) {
