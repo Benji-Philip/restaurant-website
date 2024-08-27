@@ -1,8 +1,4 @@
 ---
-import ImageOne from "../assets/image-1.webp";
-import ImageTwo from "../assets/image-2.webp";
-import ImageThree from "../assets/image-3.webp";
-import ImageFour from "../assets/image-4.webp";
 import Appetizers from "./appetizers.svelte";
 import MainCourse from "./main-course.svelte";
 import Desserts from "./desserts.svelte";
@@ -15,38 +11,21 @@ import Specials from "./specials.svelte";
   >
     Appetizers
   </h2>
-  <img
-    src={ImageTwo.src}
-    alt=""
-    class="h-[300px] w-[300px] object-cover rounded-xl mr-0 block md:hidden mb-9 mt-9 self-center"
-  />
   <Appetizers />
 
 <h2
   class="font-extrabold text-2xl text-center mt-10 border-2 border-[#281c1c] px-4 py-2"
 >
   Main Course
-</h2> <img
-src={ImageOne.src}
-alt=""
-class="h-[300px] w-[300px] object-cover rounded-xl mr-0 block md:hidden mb-9 mt-9 self-center"
-/><MainCourse />
+</h2> <MainCourse />
 <h2
   class="font-extrabold text-2xl text-center mt-10 border-2 border-[#281c1c] px-4 py-2"
 >
   Desserts
-</h2> <img
-src={ImageFour.src}
-alt=""
-class="h-[300px] w-[300px] object-cover rounded-xl mr-0 block md:hidden mb-9 mt-9 self-center"
-/><Desserts />
+</h2> <Desserts />
 <h2
   class="font-extrabold text-2xl text-center mt-10 border-2 border-[#281c1c] px-4 py-2"
 >
   Specials
-</h2> <img
-src={ImageThree.src}
-alt=""
-class="h-[300px] w-[300px] object-cover rounded-xl mr-0 block md:hidden mb-9 mt-9 self-center"
-/><Specials />
+</h2> <Specials />
 </section>

@@ -1,8 +1,4 @@
 <script>
-  import ImageOne from "../assets/image-1.webp";
-  import ImageTwo from "../assets/image-2.webp";
-  import ImageThree from "../assets/image-3.webp";
-  import ImageFour from "../assets/image-4.webp";
   import ButtonMenu from "./button-menu.svelte";
   import Appetizers from "./appetizers.svelte";
   import MainCourse from "./main-course.svelte";
@@ -33,24 +29,4 @@
       </div>
     </section>
   </div>
-    <img
-      src={ImageTwo.src}
-      alt=""
-      class="h-[300px] w-[300px] object-cover rounded-xl m-6 mr-0 hidden md:block md:{selectedButton === 1 ? "block":"hidden"}"
-    />
-    <img
-      src={ImageOne.src}
-      alt=""
-      class="h-[300px] w-[300px] object-cover rounded-xl m-6 mr-0 hidden md:block md:{selectedButton === 2 ? "block":"hidden"}"
-    />
-    <img
-      src={ImageFour.src}
-      alt=""
-      class="h-[300px] w-[300px] object-cover rounded-xl m-6 mr-0 hidden md:block md:{selectedButton === 3 ? "block":"hidden"}"
-    />
-    <img
-      src={ImageThree.src}
-      alt=""
-      class="h-[300px] w-[300px] object-cover rounded-xl m-6 mr-0 hidden md:block md:{selectedButton === 4 ? "block":"hidden"}"
-    />
 </div>
