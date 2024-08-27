@@ -1,11 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import MenuButton from "../components/menu-button.svelte";
 import MenuOnMobile from "../components/menu-on-mobile.astro";
 import MenuOnDesktop from "../components/menu-on-desktop.svelte";
 import ReservationForm from "../components/reservation-form.astro";
-import ButtonMenu from "../components/button-menu.svelte";
 import Footer from "../components/footer.astro";
+import ImageOne from "../assets/image-1.jpg"
+import ImageTwo from "../assets/image-2.jpg"
+import ImageThree from "../assets/image-3.jpg"
+import ImageFour from "../assets/image-4.jpg"
+import { Image } from "astro:assets";
 ---
 
 <Layout>
@@ -13,7 +16,7 @@ import Footer from "../components/footer.astro";
     <!-- Hero -->
     <section class="grid">
       <img
-        src="/src/assets/image-1.jpg"
+        src={ImageOne.src}
         alt=""
         class="col-start-1 row-start-1 h-[60vh] md:h-[80vh] min-w-[100vw] object-cover brightness-[0.8]"
         id="img-1"
@@ -48,7 +51,7 @@ import Footer from "../components/footer.astro";
       <div class="flex flex-col gap-10 sm:flex-row justify-center mb-20">
         <div class="flex flex-col sm:flex-1 items-center sm:items-start">
           <img
-            src="/src/assets/image-2.jpg"
+            src={ImageTwo.src}
             alt=""
             class="h-[400px] object-cover"
           />
@@ -61,7 +64,7 @@ import Footer from "../components/footer.astro";
         </div>
         <div class="flex flex-col flex-1">
           <img
-            src="/src/assets/image-3.jpg"
+            src={ImageThree.src}
             alt=""
             class="h-[350px] object-cover"
           /><div
@@ -73,7 +76,7 @@ import Footer from "../components/footer.astro";
         </div>
         <div class="flex flex-col flex-1">
           <img
-            src="/src/assets/image-4.jpg"
+            src={ImageFour.src}
             alt=""
             class="h-[300px] object-cover"
           /><div

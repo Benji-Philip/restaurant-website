@@ -1,14 +1,17 @@
 ---
-
+import IconOne from "../assets/location.png"
+import IconTwo from "../assets/instagram.png"
+import IconThree from "../assets/whatsapp.png"
+import IconFour from "../assets/linkedin.png"
 ---
 
 <section class="bg-white px-6 py-6 md:px-12">
   <div class="flex items-center md:justify-between flex-wrap justify-center">
     <div class="flex">
-        <div class=" border-[1px] m-2 p-2 rounded-full"><img src="/src/assets/location.png" alt="" class="w-6 h-6 object-contain"></div>
-        <div class=" border-[1px] m-2 p-2 rounded-full"><img src="/src/assets/instagram.png" alt="" class="w-6 h-6 object-contain"></div>
-        <div class=" border-[1px] m-2 p-2 rounded-full"><img src="/src/assets/whatsapp.png" alt="" class="w-6 h-6 object-contain"></div>
-        <div class=" border-[1px] m-2 p-2 rounded-full"><img src="/src/assets/linkedin.png" alt="" class="w-6 h-6 object-contain"></div>
+        <div class=" border-[1px] m-2 p-2 rounded-full"><img src={IconOne.src} alt="" class="w-6 h-6 object-contain"></div>
+        <div class=" border-[1px] m-2 p-2 rounded-full"><img src={IconTwo.src} alt="" class="w-6 h-6 object-contain"></div>
+        <div class=" border-[1px] m-2 p-2 rounded-full"><img src={IconThree.src} alt="" class="w-6 h-6 object-contain"></div>
+        <div class=" border-[1px] m-2 p-2 rounded-full"><img src={IconFour.src} alt="" class="w-6 h-6 object-contain"></div>
     </div>
     <div class="flex gap-6 mt-3">
         <div>About Us</div>
