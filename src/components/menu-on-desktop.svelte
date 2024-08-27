@@ -1,5 +1,5 @@
 <script>
-  import ImageTwo from "../assets/image-2.webp"
+  import ImageTwo from "../assets/image-2.webp";
   import ButtonMenu from "../components/button-menu.svelte";
   let selectedButton = 1;
   function handleButtonMenuEvent(e) {
@@ -43,5 +43,6 @@
     src={ImageTwo.src}
     alt=""
     class="h-[300px] w-[300px] object-cover rounded-xl m-6 mr-0 hidden md:block"
+    placeholder="blurred"
   />
 </div>
