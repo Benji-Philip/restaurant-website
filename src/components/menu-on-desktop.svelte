@@ -1,6 +1,13 @@
 <script>
+  import ImageOne from "../assets/image-1.webp";
   import ImageTwo from "../assets/image-2.webp";
-  import ButtonMenu from "../components/button-menu.svelte";
+  import ImageThree from "../assets/image-3.webp";
+  import ImageFour from "../assets/image-4.webp";
+  import ButtonMenu from "./button-menu.svelte";
+  import Appetizers from "./appetizers.svelte";
+  import MainCourse from "./main-course.svelte";
+  import Desserts from "./desserts.svelte";
+  import Specials from "./specials.svelte";
   let selectedButton = 1;
   function handleButtonMenuEvent(e) {
     selectedButton = e.detail.selected;
@@ -15,34 +22,35 @@
     <section class="hidden sm:block justify-start mr-6">
       <div class="flex flex-col text-left gap-6 w-full flex-1">
         {#if selectedButton === 1}
-          <div class=" border-b-2 pb-3">Bruschetta al Pomodoro</div>
-          <div class=" border-b-2 pb-3">Caprese Salad</div>
-          <div class=" border-b-2 pb-3">Aranchini di Riso</div>
-          <div class=" border-b-2 pb-3">Prosciutto e Melone</div>
-          <div class=" border-b-2 pb-3">Burrata with Roasted Peppers</div>
+          <Appetizers />
         {/if}{#if selectedButton === 2}
-          <div class=" border-b-2 pb-3">Fancy meal</div>
-          <div class=" border-b-2 pb-3">Happy meal</div>
-          <div class=" border-b-2 pb-3">idk eat piza</div>
-          <div class=" border-b-2 pb-3">food?</div>
+          <MainCourse />
         {/if}{#if selectedButton === 3}
-          <div class=" border-b-2 pb-3">chocolate ice-no-cream</div>
-          <div class=" border-b-2 pb-3">icecream</div>
-          <div class=" border-b-2 pb-3">pudding</div>
-          <div class=" border-b-2 pb-3">yummy yum yum</div>
-          <div class=" border-b-2 pb-3">wasabi</div>
+          <Desserts />
         {/if}{#if selectedButton === 4}
-          <div class=" border-b-2 pb-3">Big chicken</div>
-          <div class=" border-b-2 pb-3">Big Beef</div>
-          <div class=" border-b-2 pb-3">nino kuni</div>
+          <Specials />
         {/if}
       </div>
     </section>
   </div>
-  <img
-    src={ImageTwo.src}
-    alt=""
-    class="h-[300px] w-[300px] object-cover rounded-xl m-6 mr-0 hidden md:block"
-    placeholder="blurred"
-  />
+    <img
+      src={ImageTwo.src}
+      alt=""
+      class="h-[300px] w-[300px] object-cover rounded-xl m-6 mr-0 hidden md:{selectedButton === 1 ? "block":"hidden"}"
+    />
+    <img
+      src={ImageOne.src}
+      alt=""
+      class="h-[300px] w-[300px] object-cover rounded-xl m-6 mr-0 hidden md:{selectedButton === 2 ? "block":"hidden"}"
+    />
+    <img
+      src={ImageFour.src}
+      alt=""
+      class="h-[300px] w-[300px] object-cover rounded-xl m-6 mr-0 hidden md:{selectedButton === 3 ? "block":"hidden"}"
+    />
+    <img
+      src={ImageThree.src}
+      alt=""
+      class="h-[300px] w-[300px] object-cover rounded-xl m-6 mr-0 hidden md:{selectedButton === 4 ? "block":"hidden"}"
+    />
 </div>

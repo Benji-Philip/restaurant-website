@@ -20,7 +20,7 @@ import { Image } from "astro:assets";
         alt=""
         class="col-start-1 row-start-1 h-[60vh] md:h-[80vh] min-w-[100vw] object-cover brightness-[0.8]"
         id="img-1"
-        placeholder="blurred"
+        loading="eager"
       />
       <div
         class="text-white font-medium text-6xl md:text-8xl lg:text-9xl text-center z-10 col-start-1 row-start-1 flex items-center justify-center"
@@ -41,7 +41,7 @@ import { Image } from "astro:assets";
     <section
       class="text-white pt-6 sm:pt-4 md:pt-12 flex flex-col items-center mx-6 sm:mx-20"
     >
-      <div class="text-3xl sm:text-4xl sm:self-start">
+      <div class="text-3xl sm:text-4xl text-center sm:self-start">
         Our Signature Dishes
       </div><div
         class="font-extralight text-sm sm:text w-[300px] text-center sm:text-left mt-5 mb-14 sm:self-start"
@@ -55,7 +55,6 @@ import { Image } from "astro:assets";
             src={ImageTwo.src}
             alt=""
             class="h-[400px] object-cover"
-            placeholder="blurred"
           />
           <div
             class="flex sm:flex-row flex-col items-center sm:items-start justify-between mt-5 font-light text-xl w-full flex-auto"
@@ -69,7 +68,6 @@ import { Image } from "astro:assets";
             src={ImageThree.src}
             alt=""
             class="h-[350px] object-cover"
-            placeholder="blurred"
           /><div
             class="flex sm:flex-row flex-col items-center sm:items-start justify-between mt-5 font-light text-xl w-full flex-auto"
           >
@@ -82,7 +80,6 @@ import { Image } from "astro:assets";
             src={ImageFour.src}
             alt=""
             class="h-[300px] object-cover"
-            placeholder="blurred"
           /><div
             class="flex sm:flex-row flex-col items-center sm:items-start justify-between mt-5 font-light text-xl w-full flex-auto"
           >
